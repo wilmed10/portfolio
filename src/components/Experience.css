@@ -1,0 +1,73 @@
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+}
+
+.job .generals {
+    width: 40%;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.job-description {
+    width: 55%;
+}
+
+.generals > p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: .5rem 0 1rem 0;
+}
+
+.generals .skills {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: .2rem 0;
+    background-color: var(--tertiary);
+}
+.skill p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.job-description {
+    display: flex;
+
+    background-color: rgba(241, 178, 74, 0.8);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.job-description > p {
+    align-items: center;
+    margin: 0;
+    /* padding-left: .8rem; */
+    border-left: 2px solid #fff; 
+    font-size: 1.6rem;
+    line-height: 1.2;
+
+    padding: 1rem;
+
+}

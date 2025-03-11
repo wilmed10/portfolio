@@ -1,0 +1,118 @@
+:root {
+  font-size: 62.5%;
+  font-family: "Noto Sans", system-ui, Avenir, Helvetica, Arial, sans-serif; /* noto sans agregar */
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+
+  --background: #182339;
+  --primary: #f1b24a;
+  --secondary: #232741;
+  --tertiary: #0C0D16;
+  --quaternary: #ec9a12;
+  --dark-gradient: #06090e;
+  --text-color: white;
+
+  background: linear-gradient(var(--dark-gradient), var(--background));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+section {
+  width: 60%;
+  margin: 5rem auto;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 5rem 0 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+/* .theme {
+    position: fixed;
+    top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10%;
+}
+
+.theme button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.theme img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    padding: .3rem;
+} */
+
+
+
+
+
+
+
+/* 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} 
+  
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+ */

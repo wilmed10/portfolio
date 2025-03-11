@@ -1,0 +1,176 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 2rem 0 1rem 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, backdrop 0.3 ease;
+}
+
+header.scrolled {
+    backdrop-filter: blur(30px);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.svg-logo {
+    filter: drop-shadow(0px 0px 5px #ffb347);
+}
+
+.menu-theme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+/* .menu.scrolled {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem 2rem;
+} */
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: color 0.3s, font-weight 0.3s;
+}
+.menu a:hover,
+.menu a.active {
+    font-weight: 700;
+    color: /* var(--primary) */ #ec9a12;
+}
+
+
+.theme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary);
+    border-radius: 2rem;
+    padding: .1rem;
+}
+
+.theme button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.theme img {
+    /* width: 2rem;
+    height: 2rem; */
+    border-radius: 50%;
+    background-color: var(--secondary);
+    padding: .3rem;
+}
+
+
+
+/* Móviles pequeños y grandes (hasta 600px) */
+/* @media (max-width: 600px) {
+    header {
+        width: 90%;
+        padding: .5rem 1rem;
+    }
+
+    .menu ul {
+        gap: 1rem;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    .theme img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+} */
+
+/* Tabletas y pantallas pequeñas (601px - 1024px) */
+/* @media (max-width: 1024px) {
+    header {
+        width: 85%;
+        padding: .5rem 2rem;
+    }
+
+    .menu ul {
+        gap: 1.5rem;
+    }
+
+    .menu a {
+        font-size: 1.3rem;
+    }
+
+    .theme img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+} */
+
+/* Laptops y pantallas grandes (1025px en adelante) */
+/* @media (min-width: 1025px) {
+    header {
+        width: 75%;
+    }
+
+    .menu ul {
+        gap: 2.5rem;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .theme img {
+        width: 3rem;
+        height: 3rem;
+    }
+} */
