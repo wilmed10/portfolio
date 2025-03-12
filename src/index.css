@@ -10,6 +10,7 @@
   --secondary: #232741;
   --tertiary: #0C0D16;
   --quaternary: #ec9a12;
+  --quinary: #1E1E1E;
   --dark-gradient: #06090e;
   --text-color: white;
 
@@ -27,12 +28,12 @@ body {
 }
 
 section {
-  width: 60%;
-  margin: 5rem auto;
+  width: 40%;
+  margin: 8rem auto;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   margin: 0;
 }
 
@@ -40,6 +41,14 @@ h3 {
   margin: 0;
   font-size: 2.5rem;
   color: var(--primary);
+}
+
+.title {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
 footer {
@@ -51,68 +60,32 @@ footer {
   font-weight: 500;
 }
 
+/* ************************************************ */
 
-/* .theme {
-    position: fixed;
-    top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    right: 10%;
+/* Móviles pequeños y grandes (hasta 640px) */
+@media (max-width: 640px) {
+  section {
+    width: 100%;
+  } 
 }
 
-.theme button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+/* Tabletas y pantallas pequeñas (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  section {
+    width: 80%;
+  }  
 }
 
-.theme img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: var(--secondary);
-    padding: .3rem;
-} */
-
-
-
-
-
-
-
-/* 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} 
-  
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+/* Laptops y pantallas grandes (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  section {
+    width: 70%;
   }
 }
- */
+
+/* Pantallas muy grandes (1281px en adelante) */
+@media (min-width: 1281px) {
+  section {
+    width: 60%;
+  }
+}

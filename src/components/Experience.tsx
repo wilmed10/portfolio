@@ -5,9 +5,9 @@ export default function Experience() {
     <section>
         <div className="title">
             <div className='photo'>
-                <img src="../img/jobs-white.png" alt="Projects" />
+                <img src="./img/jobs-white.png" alt="Projects" />
             </div>
-            <h2>Experiencia</h2>
+            <h2>EXPERIENCE</h2>
         </div>
 
         <div className='jobs'>
@@ -15,26 +15,34 @@ export default function Experience() {
             <div className="job">
 
                 <div className='generals'>
-                    <h3>Ingeniero de servicios</h3>
-                    <p>Controling S.A.S ~ 4 Meses</p>
+                    <h3>Service Engineer</h3>
+                    <p>Controling S.A.S ~ 4 Months</p>
                     <div className="skills">
-                        <div className='skill'>
-                            <p>Diagnostico de fallos</p>
-                        </div>
+                    <div className='skill'>
+                        <p>Fault diagnosis</p>
+                    </div>
 
-                        <div className='skill'>
-                            <p>Configuración de redes</p>
-                        </div>
+                    <div className='skill'>
+                        <p>Network configuration</p>
+                    </div>
 
-                        <div className='skill'>
-                            <p>Integración de equipos</p>
-                        </div>
+                    <div className='skill'>
+                        <p>Equipment integration</p>
+                    </div>
+
                     </div>
                 </div>
 
                 <div className="job-description">
-                    <p>Responsable de la implementación y optimización de redes de comunicación. Encargado de la puesta en servicio y configuración de equipos como switches, GPS y medidores. Participé en la modernización de infraestructuras de red mediante la modificación de controladores y ajustes en planos de ingeniería, garantizando el correcto funcionamiento y estabilidad del sistema.</p>
+                    <ul>
+                        <li>Implementation and optimization of communication networks.</li>
+                        <li>Configuration of devices such as switches, GPS, and meters.</li>
+                        <li>Modernization of infrastructure through adjustments in controllers and engineering plans.</li>
+                        <li>Ensuring system stability and proper operation.</li>
+                    </ul>
                 </div>
+
+
 
             </div>
 

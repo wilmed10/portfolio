@@ -56,14 +56,14 @@ function App() {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#666666",
         },
         links: {
-          color: "#ffffff",
-          distance: 150,
+          color: "#fff",
+          distance: 120,
           enable: true,
-          opacity: 0.5,
-          width: 1,
+          opacity: 0.1,
+          width: 0.5,
         },
         move: {
           direction: MoveDirection.none,

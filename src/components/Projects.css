@@ -2,16 +2,13 @@ section.project-container {
     padding-top: 10rem;
 }
 
-.title {
-    display: flex;
-    align-items:center;
-    gap: 2rem;
-    padding: 2rem 0;
-}
+
 
 .title .photo {
+    display: flex;
+    align-items: center;
     width: 4rem;
-    height: 4rem;
+    /* height: 4rem; */
 }
 .title .photo img {
     object-fit: cover;
@@ -70,12 +67,17 @@ section.project-container {
     align-items: center;
     border-radius: 1.5rem;
     padding: .2rem 1.5rem;
-    background-color: var(--tertiary);
+    background-color: var(--quinary);
     gap: 1rem;
 }
+.tech:hover {
+    /* transform: scale(1.02); */
+    box-shadow: 0rem .1rem .2rem rgba(241, 178, 74, 0.5);
+}
 .tech .photo-tech {
-    width: 1.5rem;
-    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 1.2rem;
 }
 .tech .photo-tech img {
     object-fit: cover;
@@ -84,19 +86,21 @@ section.project-container {
 }
 .tech p {
     margin: 0;
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .description > p {
     margin: 1rem 0;
     font-size: 1.4rem;
-    line-height: 1.2;
+    /* line-height: 1.6rem; */
 }
 
 .pj-buttons {
     display: flex;
     gap: 2rem;
     align-content: end;
+    /* justify-content: center; */ /* ** mod ** */
 }
 
 .pj-btn {
@@ -106,9 +110,15 @@ section.project-container {
     text-decoration: none;
     background-color: var(--quaternary);
     border-radius: 2rem;
-    padding: .5rem 2rem;
+    padding: .5rem 3rem; /* 5rem 2rem */
     gap: 1.2rem;
     transition: background-color 0.3s;
+}
+
+.pj-btn:hover {
+    background-color: #d08710;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
 .pj-btn img {
@@ -122,34 +132,22 @@ section.project-container {
 }
 
 
-
-/* Media Queries */
-
-/* Móviles pequeños y grandes (hasta 600px) */
-@media (max-width: 600px) {
-    .project {
-        flex-direction: column; /* Apilar proyectos */
-    }
-    .project .photo, .description {
-        width: 100%; /* Usar todo el ancho */
-    }
+/* Móviles pequeños y grandes (hasta 640px) */
+@media (max-width: 640px) {
+    
 }
 
-/* Tabletas y pantallas pequeñas (601px - 1024px) */
-@media (max-width: 1024px) {
-    .projects {
-        gap: 2rem;
-    }
-    .project {
-        flex-direction: column;
-        gap: 2rem;
-    }
+/* Tabletas y pantallas pequeñas (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+
 }
 
-/* Laptops y pantallas grandes (1025px en adelante) */
-@media (min-width: 1025px) {
-    .project {
-        flex-direction: row;
-    }
+/* Laptops y pantallas grandes (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
 }
-  
+
+/* Pantallas muy grandes (1281px en adelante) */
+@media (min-width: 1281px) {
+
+}

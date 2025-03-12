@@ -17,10 +17,6 @@
     width: 40%;
 }
 
-h3 {
-    font-size: 2.5rem;
-}
-
 .job-description {
     width: 55%;
 }
@@ -50,24 +46,105 @@ h3 {
     font-size: 1.3rem;
 }
 
+/*  .job-description {
+    display: flex;
+    background-color: var(--quinary);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.job-description > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.job-description > ul > li {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 0.6rem 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.job-description > ul > li::before {
+    content: "🔹";
+    margin-right: 0.8rem;
+    color: #F1B24A;
+}
+
+.job-description:hover {
+    background-color: #2A2A2A;
+    transition: 0.3s ease-in-out;
+} */
+
 .job-description {
     display: flex;
-
-    background-color: rgba(241, 178, 74, 0.8);
-    border-radius: 5px;
+    background-color: var(--quinary);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 1.2rem;
     justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.job-description > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.job-description > ul > li {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 0.6rem 0;
+    display: flex;
     align-items: center;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.job-description > ul > li:last-child {
+    border-bottom: none;
+}
+
+.job-description > ul > li::before {
+    content: "🔹";
+    margin-right: 0.8rem;
+    color: #F1B24A;
+}
+
+.job-description > ul > li:hover {
+    background-color: rgba(241, 178, 74, 0.2);
+    color: #F1B24A;
+}
+
+
+/* Móviles pequeños y grandes (hasta 640px) */
+@media (max-width: 640px) {
     
 }
 
-.job-description > p {
-    align-items: center;
-    margin: 0;
-    /* padding-left: .8rem; */
-    border-left: 2px solid #fff; 
-    font-size: 1.6rem;
-    line-height: 1.2;
+/* Tabletas y pantallas pequeñas (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
 
-    padding: 1rem;
+}
+
+/* Laptops y pantallas grandes (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Pantallas muy grandes (1281px en adelante) */
+@media (min-width: 1281px) {
 
 }

@@ -14,6 +14,8 @@ header {
     transition: background-color 0.3s ease, backdrop 0.3 ease;
 }
 
+/* background: rgba(20, 20, 20, 0.85); */
+
 header.scrolled {
     backdrop-filter: blur(30px);
 }
@@ -48,15 +50,6 @@ header.scrolled {
     transition: all 0.3s ease;
 }
 
-/* .menu.scrolled {
-    top: 0;
-    left: 0;
-    transform: none;
-    width: 100%;
-    border-radius: 0;
-    padding: 1rem 2rem;
-} */
-
 .menu ul {
     list-style: none;
     margin: 0;
@@ -81,7 +74,6 @@ header.scrolled {
     font-weight: 700;
     color: /* var(--primary) */ #ec9a12;
 }
-
 
 .theme {
     display: flex;
@@ -112,65 +104,97 @@ header.scrolled {
 }
 
 
+/* ********************************** */
 
-/* Móviles pequeños y grandes (hasta 600px) */
-/* @media (max-width: 600px) {
-    header {
-        width: 90%;
-        padding: .5rem 1rem;
-    }
+.switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 25px;
+}
 
-    .menu ul {
-        gap: 1rem;
-    }
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
 
-    .menu a {
-        font-size: 1.2rem;
-    }
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--secondary);
+transition: 0.4s;
+border-radius: 34px;
+}
 
-    .theme img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-} */
+.slider::before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+background-color: var(--primary);
+transition: 0.4s;
+border-radius: 50%;
+left: 4px;
+top: 50%;
+transform: translateY(-50%);
+}
 
-/* Tabletas y pantallas pequeñas (601px - 1024px) */
-/* @media (max-width: 1024px) {
-    header {
-        width: 85%;
-        padding: .5rem 2rem;
-    }
+.theme-icon {
+position: absolute;
+width: 15px;
+height: 15px;
+transition: 0.4s;
+}
 
-    .menu ul {
-        gap: 1.5rem;
-    }
+.theme-icon.sun {
+left: 5px;
+top: 50%;
+transform: translateY(-50%);
+}
 
-    .menu a {
-        font-size: 1.3rem;
-    }
+.theme-icon.moon {
+right: 5px;
+top: 50%;
+transform: translateY(-50%);
+}
 
-    .theme img {
-        width: 2.8rem;
-        height: 2.8rem;
-    }
-} */
+input:checked + .slider {
+background-color: /* var(--tertiary) */ #ffffff;
+}
 
-/* Laptops y pantallas grandes (1025px en adelante) */
-/* @media (min-width: 1025px) {
-    header {
-        width: 75%;
-    }
+input:checked + .slider::before {
+transform: translate(24px, -50%);
+}
 
-    .menu ul {
-        gap: 2.5rem;
-    }
+input:not(:checked) + .slider .moon {
+opacity: 0;
+}
 
-    .menu a {
-        font-size: 1.5rem;
-    }
+input:checked + .slider .sun {
+opacity: 0;
+}
 
-    .theme img {
-        width: 3rem;
-        height: 3rem;
-    }
-} */
+/* Móviles pequeños y grandes (hasta 640px) */
+@media (max-width: 640px) {
+    
+}
+
+/* Tabletas y pantallas pequeñas (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+}
+
+/* Laptops y pantallas grandes (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Pantallas muy grandes (1281px en adelante) */
+@media (min-width: 1281px) {
+
+}

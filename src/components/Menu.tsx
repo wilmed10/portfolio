@@ -55,6 +55,14 @@ export default function Menu() {
   console.log(scrolled);
   console.log(activeSection);
 
+
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    changeTheme(theme);
+  }, [theme]);
+
   return (
     <header className={scrolled ? 'scrolled' : ''}>
       <div className="container">
@@ -77,19 +85,35 @@ export default function Menu() {
         <div className="menu-theme">
           <nav className="menu">
             <ul>
-              <li><a href="#projects" onClick={(e) => handleMenuClick(e, 'projects')} className={activeSection === 'projects' ? 'active' : ''}>Proyectos</a></li>
-              <li><a href="#experience" onClick={(e) => handleMenuClick(e, 'experience')} className={activeSection === 'experience' ? 'active' : ''}>Experiencia</a></li>
-              <li><a href="#aboutMe" onClick={(e) => handleMenuClick(e, 'aboutMe')} className={activeSection === 'aboutMe' ? 'active' : ''}>Sobre mí</a></li>
-              <li><a href="#contact" onClick={(e) => handleMenuClick(e, 'contact')} className={activeSection === 'contact' ? 'active' : ''}>Contacto</a></li>
+              <li><a href="#projects" onClick={(e) => handleMenuClick(e, 'projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</a></li>
+              <li><a href="#experience" onClick={(e) => handleMenuClick(e, 'experience')} className={activeSection === 'experience' ? 'active' : ''}>Experience</a></li>
+              <li><a href="#aboutMe" onClick={(e) => handleMenuClick(e, 'aboutMe')} className={activeSection === 'aboutMe' ? 'active' : ''}>About me</a></li>
+              <li><a href="#contact" onClick={(e) => handleMenuClick(e, 'contact')} className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
             </ul>
           </nav>
-          <div className="theme">
-            <button onClick={() => changeTheme('dark')}>
-              <img src="../img/luna.png" alt="theme icon" />
+          <div className="theme-switcher">
+            
+            {/* <button onClick={() => changeTheme('dark')}>
+              <img src="./img/luna.png" alt="theme icon" />
             </button>
             <button onClick={() => changeTheme('light')}>
-              <img src="../img/sol.png" alt="theme icon" />
-            </button>
+              <img src="./img/sol.png" alt="theme icon" />
+            </button> */}
+
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={theme === "dark"}
+                onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+              />
+              <span className="slider">
+                <div /* src="./img/sol.png" alt="Sun Icon"  */className="theme-icon sun" />
+                <div /* src="./img/luna.png" alt="Moon Icon" */ className="theme-icon moon" />
+                {/* <img src="./img/sol.png" alt="Sun Icon" className="theme-icon sun" />
+                <img src="./img/luna.png" alt="Moon Icon" className="theme-icon moon" /> */}
+              </span>
+            </label>
+
           </div>
         </div>
       </div>
