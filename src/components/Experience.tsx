@@ -18,18 +18,17 @@ export default function Experience() {
                     <h3>Service Engineer</h3>
                     <p>Controling S.A.S ~ 4 Months</p>
                     <div className="skills">
-                    <div className='skill'>
-                        <p>Fault diagnosis</p>
-                    </div>
+                        <div className='skill'>
+                            <p>Fault diagnosis</p>
+                        </div>
 
-                    <div className='skill'>
-                        <p>Network configuration</p>
-                    </div>
+                        <div className='skill'>
+                            <p>Network configuration</p>
+                        </div>
 
-                    <div className='skill'>
-                        <p>Equipment integration</p>
-                    </div>
-
+                        <div className='skill'>
+                            <p>Equipment integration</p>
+                        </div>
                     </div>
                 </div>
 

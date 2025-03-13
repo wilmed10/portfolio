@@ -97,7 +97,7 @@ function App() {
   );
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(#06090e, var(--background))' }}>
+    <div style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(var(--gradient), var(--background))' }}>
       {init && (
         <Particles
           id="tsparticles"
@@ -119,7 +119,7 @@ function App() {
         <div id="projects"><Projects/></div>
         <div id="experience"><Experience/></div>
         <div id="aboutMe"><AboutMe/></div>
-        <footer>2025 Wilson J. Medina Arrieta ~ Todos los derechos reservados </footer>
+        <footer><p>2025 Wilson J. Medina Arrieta ~ Todos los derechos reservados</p></footer>
       </div>
     </div>
   )

@@ -2,8 +2,6 @@
 .aboutMe-description {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     gap: 1rem;
 }
 
@@ -16,25 +14,4 @@
 .aboutMe-description span {
     color: var(--primary);
     font-weight: 600;
-}
-
-
-/* Móviles pequeños y grandes (hasta 640px) */
-@media (max-width: 640px) {
-    
-}
-
-/* Tabletas y pantallas pequeñas (641px - 1024px) */
-@media (min-width: 641px) and (max-width: 1024px) {
-
-}
-
-/* Laptops y pantallas grandes (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
-
-/* Pantallas muy grandes (1281px en adelante) */
-@media (min-width: 1281px) {
-
 }

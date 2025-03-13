@@ -4,6 +4,10 @@ export default function Resume() {
   return (
     <section>
         <div className="resume">
+            <div className="photo up">
+                <img src="./img/foto.jpg" alt="profile photo" />
+            </div>
+
             <div className="intro">
                 
                 <div className="title">
@@ -24,12 +28,12 @@ export default function Resume() {
                     </a>
                     <a href="./documents/CV Wilson Medina WebDev ENG.pdf" target="_blank" rel="noopener noreferrer" className="btn">
                         <img src="./img/descargar-white.png" alt="download icon" />
-                        <span>Download CV</span>
+                        <span>Resume</span>
                     </a>
                 </div>
             </div>
 
-            <div className="photo">
+            <div className="photo right">
                 <img src="./img/foto.jpg" alt="profile photo" />
             </div>
         </div>

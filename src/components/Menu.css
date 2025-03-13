@@ -63,7 +63,7 @@ header.scrolled {
 }
 
 .menu a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 500;
@@ -72,7 +72,7 @@ header.scrolled {
 .menu a:hover,
 .menu a.active {
     font-weight: 700;
-    color: /* var(--primary) */ #ec9a12;
+    color: var(--quaternary);
 }
 
 .theme {
@@ -179,22 +179,26 @@ input:checked + .slider .sun {
 opacity: 0;
 }
 
-/* Móviles pequeños y grandes (hasta 640px) */
 @media (max-width: 640px) {
-    
+    .container {
+        width: 90%;
+    }
+    .menu {
+        display: none;
+    }
+    .switch {
+        margin-right: 1.5rem;
+    }
 }
 
-/* Tabletas y pantallas pequeñas (641px - 1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
-
+    .container {
+        width: 90%;
+    }
 }
 
-/* Laptops y pantallas grandes (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
-
-/* Pantallas muy grandes (1281px en adelante) */
 @media (min-width: 1281px) {
-
-}
+    .container {
+      width: 110rem;
+    }
+  }

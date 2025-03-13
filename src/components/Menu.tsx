@@ -38,23 +38,22 @@ export default function Menu() {
       root.style.setProperty('--secondary', '#232741');
       root.style.setProperty('--tertiary', '#0C0D16');
       root.style.setProperty('--quaternary', '#ec9a12');
-      root.style.setProperty('--dark-gradient', '#06090e');
-      root.style.setProperty('--text-color', 'white');
+      root.style.setProperty('--gradient', '#06090e');
+      root.style.setProperty('--text-color', '#ffffff');
     } else if (theme === 'light') {
-      /* por asignar... */
-      root.style.setProperty('--background', '#ffffff');
-      root.style.setProperty('--primary', '#000000');
-      root.style.setProperty('--secondary', '#f0f0f0');
-      root.style.setProperty('--tertiary', '#d0d0d0');
-      root.style.setProperty('--quaternary', '#a0a0a0');
-      root.style.setProperty('--dark-gradient', '#0a0a0a');
-      root.style.setProperty('--text-color', '#000000');
+      /* to asign... */
+      root.style.setProperty('--background', '#f8f9fa');
+      root.style.setProperty('--primary', '#f1b24a');
+      root.style.setProperty('--secondary', '#e3e6ea');
+      root.style.setProperty('--tertiary', '#c0c7d1');
+      root.style.setProperty('--quaternary', '#ffcc00');
+      root.style.setProperty('--gradient', '#0056b3)');
+      root.style.setProperty('--text-color', '#1a1a1a');
     }
   };
 
   console.log(scrolled);
   console.log(activeSection);
-
 
   const [theme, setTheme] = useState<"dark" | "light">("dark");
 
@@ -92,13 +91,6 @@ export default function Menu() {
             </ul>
           </nav>
           <div className="theme-switcher">
-            
-            {/* <button onClick={() => changeTheme('dark')}>
-              <img src="./img/luna.png" alt="theme icon" />
-            </button>
-            <button onClick={() => changeTheme('light')}>
-              <img src="./img/sol.png" alt="theme icon" />
-            </button> */}
 
             <label className="switch">
               <input
@@ -109,8 +101,6 @@ export default function Menu() {
               <span className="slider">
                 <div /* src="./img/sol.png" alt="Sun Icon"  */className="theme-icon sun" />
                 <div /* src="./img/luna.png" alt="Moon Icon" */ className="theme-icon moon" />
-                {/* <img src="./img/sol.png" alt="Sun Icon" className="theme-icon sun" />
-                <img src="./img/luna.png" alt="Moon Icon" className="theme-icon moon" /> */}
               </span>
             </label>
 

@@ -12,7 +12,7 @@
   --quaternary: #ec9a12;
   --quinary: #1E1E1E;
   --dark-gradient: #06090e;
-  --text-color: white;
+  --text-color: #ffffff;
 
   background: linear-gradient(var(--dark-gradient), var(--background));
 }
@@ -65,14 +65,17 @@ footer {
 /* Móviles pequeños y grandes (hasta 640px) */
 @media (max-width: 640px) {
   section {
-    width: 100%;
+    width: 90%;
   } 
+  footer p {
+    text-align: center;
+  }
 }
 
 /* Tabletas y pantallas pequeñas (641px - 1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
   section {
-    width: 80%;
+    width: 85%;
   }  
 }
 
@@ -86,6 +89,7 @@ footer {
 /* Pantallas muy grandes (1281px en adelante) */
 @media (min-width: 1281px) {
   section {
-    width: 60%;
+    width: 90rem;
+    /* width: 60%; */
   }
 }

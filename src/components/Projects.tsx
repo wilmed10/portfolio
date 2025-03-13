@@ -152,7 +152,7 @@ export default function Projects() {
                 </div>
             </div>
 
-            <div>
+            <div className='btn-more'>
                 <a href="https://github.com/wilmed10?tab=repositories" target="_blank" rel="noopener noreferrer" className="pj-btn">
                     <span>More projects</span>
                 </a>

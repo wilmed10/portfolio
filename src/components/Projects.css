@@ -2,8 +2,6 @@ section.project-container {
     padding-top: 10rem;
 }
 
-
-
 .title .photo {
     display: flex;
     align-items: center;
@@ -94,13 +92,13 @@ section.project-container {
     margin: 1rem 0;
     font-size: 1.4rem;
     /* line-height: 1.6rem; */
+    text-align: justify;
 }
 
 .pj-buttons {
     display: flex;
     gap: 2rem;
     align-content: end;
-    /* justify-content: center; */ /* ** mod ** */
 }
 
 .pj-btn {
@@ -126,28 +124,47 @@ section.project-container {
 }
 
 .pj-btn span {
-    color: #fff;
+    color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-
-/* Móviles pequeños y grandes (hasta 640px) */
 @media (max-width: 640px) {
-    
-}
-
-/* Tabletas y pantallas pequeñas (641px - 1024px) */
-@media (min-width: 641px) and (max-width: 1024px) {
-
-}
-
-/* Laptops y pantallas grandes (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
-
-/* Pantallas muy grandes (1281px en adelante) */
-@media (min-width: 1281px) {
-
+    .projects {
+        gap: 4rem;
+    }
+    .project {
+        flex-direction: column;
+    }
+    .project.midle {
+        flex-direction: column;
+    }
+    .project .photo {
+        width: 100%;
+        align-self: center;
+    }
+    .description {
+        width: 100%;
+    }
+    .title-project{
+        display: block;
+        padding-bottom: 1rem;
+    }
+    h3 {
+        padding-top: 1rem;;
+        font-size: 2.6rem;
+    }
+    .techs{
+        gap: .8rem;
+    }
+    .pj-buttons{
+        gap: 1.5rem;
+    }
+    .pj-btn {
+        width: 100%;
+    }
+    .btn-more {
+        display: flex;
+        width: 100%;
+    }
 }
