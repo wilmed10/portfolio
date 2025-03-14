@@ -1,11 +1,13 @@
+import { useStore } from '../store/useStore';
 import './AboutMe.css'
 
 export default function AboutMe() {
+  const { theme } = useStore();
   return (
     <section>
         <div className="title">
             <div className='photo'>
-                <img src="./img/perfil-white.png" alt="Projects" />
+                <img src={theme === 'dark' ?'./img/perfil-white.png':'./img/perfil-black.png'} alt="Projects" />
             </div>
             <h2>ABOUT ME</h2>
         </div>

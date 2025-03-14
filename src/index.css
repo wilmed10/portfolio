@@ -10,7 +10,7 @@
   --secondary: #232741;
   --tertiary: #0C0D16;
   --quaternary: #ec9a12;
-  --quinary: #1E1E1E;
+  --quinary: #707070;
   --gradient: #06090e;
   --text-color: #ffffff;
 
@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: var(--primary);
 }
 

@@ -35,8 +35,11 @@ section.project-container {
 .project .photo {
     width: 47.5%;
     border-radius: 1rem;
-    border: 2px solid #fff;
+    border: 2px solid #fff; /* #c1c1c1 */
     overflow: hidden;
+}
+.project .photo.light {
+    border: 2px solid #c1c1c1; /* #c1c1c1 */
 }
 
 .project .photo img {
@@ -86,6 +89,7 @@ section.project-container {
     margin: 0;
     font-weight: 500;
     font-size: 1.2rem;
+    color: #fff;
 }
 
 .description > p {
@@ -108,9 +112,10 @@ section.project-container {
     text-decoration: none;
     background-color: var(--quaternary);
     border-radius: 2rem;
-    padding: .5rem 3rem; /* 5rem 2rem */
+    padding: .3rem 3rem; /* 5rem 2rem */
     gap: 1.2rem;
     transition: background-color 0.3s;
+    /* width: 100%; */
 }
 
 .pj-btn:hover {
@@ -124,7 +129,7 @@ section.project-container {
 }
 
 .pj-btn span {
-    color: var(--text-color);
+    color: #fff/* var(--text-color) */;
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -151,7 +156,7 @@ section.project-container {
         padding-bottom: 1rem;
     }
     h3 {
-        padding-top: 1rem;;
+        padding-top: 1rem;
         font-size: 2.6rem;
     }
     .techs{

@@ -59,7 +59,7 @@ function App() {
           value: "#666666",
         },
         links: {
-          color: "#fff",
+          color: "#f1b24a",
           distance: 120,
           enable: true,
           opacity: 0.1,
