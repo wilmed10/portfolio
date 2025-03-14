@@ -19,7 +19,8 @@ export default function Resume() {
 
                 <div className="buttons">
                     <a href="https://linkedin.com/in/wilson-medina-arrieta-492792287" target="_blank" rel="noopener noreferrer" className="btn">
-                        <img src="./img/linkedin-white.png" alt="linkedin logo" />
+                        <img src="./img/linkedin-white.png" alt="linkedin logo" className="linkedin-white" />
+                        {/* <img src="./img/linkedin-black.png" alt="linkedin logo" className="linkedin-black" /> */}
                         <span>Linkedin</span>
                     </a>
                     <a href="https://github.com/wilmed10" target="_blank" rel="noopener noreferrer" className="btn">

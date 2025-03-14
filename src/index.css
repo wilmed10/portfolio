@@ -1,9 +1,9 @@
 :root {
   font-size: 62.5%;
-  font-family: "Noto Sans", system-ui, Avenir, Helvetica, Arial, sans-serif; /* noto sans agregar */
+  font-family: "Noto Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
 
   --background: #182339;
   --primary: #f1b24a;
@@ -11,10 +11,10 @@
   --tertiary: #0C0D16;
   --quaternary: #ec9a12;
   --quinary: #1E1E1E;
-  --dark-gradient: #06090e;
+  --gradient: #06090e;
   --text-color: #ffffff;
 
-  background: linear-gradient(var(--dark-gradient), var(--background));
+  background: linear-gradient(var(--gradient), var(--background));
 }
 
 body {
@@ -62,7 +62,6 @@ footer {
 
 /* ************************************************ */
 
-/* Móviles pequeños y grandes (hasta 640px) */
 @media (max-width: 640px) {
   section {
     width: 90%;
@@ -72,21 +71,18 @@ footer {
   }
 }
 
-/* Tabletas y pantallas pequeñas (641px - 1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
   section {
     width: 85%;
   }  
 }
 
-/* Laptops y pantallas grandes (1025px - 1280px) */
 @media (min-width: 1025px) and (max-width: 1280px) {
   section {
     width: 70%;
   }
 }
 
-/* Pantallas muy grandes (1281px en adelante) */
 @media (min-width: 1281px) {
   section {
     width: 90rem;

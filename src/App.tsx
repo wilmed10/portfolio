@@ -97,7 +97,7 @@ function App() {
   );
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(var(--gradient), var(--background))' }}>
+    <div style={{ position: 'relative' }}>
       {init && (
         <Particles
           id="tsparticles"

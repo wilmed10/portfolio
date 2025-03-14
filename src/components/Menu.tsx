@@ -42,13 +42,13 @@ export default function Menu() {
       root.style.setProperty('--text-color', '#ffffff');
     } else if (theme === 'light') {
       /* to asign... */
-      root.style.setProperty('--background', '#f8f9fa');
+      root.style.setProperty('--background', '#fff');/* #f8f9fa */
       root.style.setProperty('--primary', '#f1b24a');
       root.style.setProperty('--secondary', '#e3e6ea');
       root.style.setProperty('--tertiary', '#c0c7d1');
       root.style.setProperty('--quaternary', '#ffcc00');
-      root.style.setProperty('--gradient', '#0056b3)');
-      root.style.setProperty('--text-color', '#1a1a1a');
+      root.style.setProperty('--gradient', '#fff');/* #e6f2ff, #0056b3 */
+      root.style.setProperty('--text-color', '#000000');
     }
   };
 
