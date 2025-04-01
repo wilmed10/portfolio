@@ -119,7 +119,7 @@ function App() {
         <div id="projects"><Projects/></div>
         <div id="experience"><Experience/></div>
         <div id="aboutMe"><AboutMe/></div>
-        <footer><p>2025 Wilson J. Medina Arrieta ~ Todos los derechos reservados</p></footer>
+        <footer><p>2025 Wilson J. Medina Arrieta ~ All rights reserved</p></footer>
       </div>
     </div>
   )

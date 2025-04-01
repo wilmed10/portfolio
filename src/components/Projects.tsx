@@ -16,11 +16,54 @@ export default function Projects() {
 
             <div className='projects'>
 
-                {/* make a component with each project */}
-
                 <div className="project">
                     <div className={theme === 'dark' ?'photo':'photo light'}>
-                        <img src="./img/project-crypto.png" alt="project 1" />
+                        <img src="./img/project-drinks.png" alt="project 1" />
+                    </div>
+
+                    <div className="description">
+                        <div>
+                            <h3>Drink recipe finder</h3>
+
+                            <div className="techs">
+                                <div className='tech'>
+                                    <div className="photo-tech">
+                                        <img src="./img/react-logo.svg" alt="react logo" />
+                                    </div>
+                                    <p>React</p>
+                                </div>
+
+                                <div className='tech'>
+                                    <div className="photo-tech"><img src="./img/typescript-logo.svg" alt="typescript logo" /></div>
+                                    <p>Typescrypt</p>
+                                </div>
+
+                                <div className='tech'>
+                                    <div className="photo-tech"><img src="./img/tailwindcss-logo.svg" alt="tailwindcss logo" /></div>
+                                    <p>Tailwind CSS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>This project was built with React and React Router DOM for seamless multi-page navigation. It leverages the Slice Pattern to manage multiple Zustand stores, ensuring modular and efficient state management for an enhanced user experience.</p>
+
+                        <div className="pj-buttons">
+                            <a href="https://wilmed10.github.io/drinks/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                                <img src="./img/eye-white.png" alt="eye icon" />
+                                <span>Preview</span>
+                            </a>
+                            <a href="https://github.com/wilmed10/drinks/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                                <img src="./img/github-white.png" alt="github logo" />
+                                <span>Github</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="project midle">
+                    <div className={theme === 'dark' ?'photo':'photo light'}>
+                        <img src="./img/project-crypto2.png" alt="project 2" />
                     </div>
 
                     <div className="description">
@@ -39,11 +82,6 @@ export default function Projects() {
                                     <div className="photo-tech"><img src="./img/typescript-logo.svg" alt="typescript logo" /></div>
                                     <p>Typescrypt</p>
                                 </div>
-
-                                <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/tailwindcss-logo.svg" alt="tailwindcss logo" /></div>
-                                    <p>Tailwind CSS</p>
-                                </div>
                             </div>
                         </div>
 
@@ -55,54 +93,6 @@ export default function Projects() {
                                 <span>Preview</span>
                             </a>
                             <a href="https://github.com/wilmed10/cryptocurrency-market/" target="_blank" rel="noopener noreferrer" className="pj-btn">
-                                <img src="./img/github-white.png" alt="github logo" />
-                                <span>Github</span>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className="project midle">
-                    <div className={theme === 'dark' ?'photo':'photo light'}>
-                        <img src="./img/project-expense.png" alt="project 2" />
-                    </div>
-
-                    <div className="description">
-                        <div>
-                            <h3>Expense control</h3>
-
-                            <div className="techs">
-                                <div className='tech'>
-                                    <div className="photo-tech">
-                                        <img src="./img/react-logo.svg" alt="react logo" />
-                                    </div>
-                                    <p>React</p>
-                                </div>
-
-                                <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/typescript-logo.svg" alt="typescript logo" /></div>
-                                    <p>Typescrypt</p>
-                                </div>
-
-                                <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/tailwindcss-logo.svg" alt="tailwindcss logo" /></div>
-                                    <p>Tailwind CSS</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p>Expense planner built with React, TypeScript, and Tailwind CSS. It
-                        uses Zustand for state management, React Hook Form for
-                        efficient form handling, and a modal for smooth interactions,
-                        providing an intuitive expense tracking interface</p>
-
-                        <div className="pj-buttons">
-                            <a href="https://wilmed10.github.io/expense-control/" target="_blank" rel="noopener noreferrer" className="pj-btn">
-                                <img src="./img/eye-white.png" alt="eye icon" />
-                                <span>Preview</span>
-                            </a>
-                            <a href="https://github.com/wilmed10/expense-control/" target="_blank" rel="noopener noreferrer" className="pj-btn">
                                 <img src="./img/github-white.png" alt="github logo" />
                                 <span>Github</span>
                             </a>

@@ -30,7 +30,7 @@ export default function Resume() {
                             <img src={theme === 'dark' ?'./img/github-white.png':'./img/github-black.png'} alt="github logo" />
                             <span>Github</span>
                         </a>
-                        <a href="./documents/CV Wilson Medina WebDev ENG.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+                        <a href="./documents/CV Wilson Medina WebDev.pdf" target="_blank" rel="noopener noreferrer" className="btn">
                             <img src={theme === 'dark' ?'./img/descargar-white.png':'./img/descargar-black.png'} alt="download icon" />
                             <span>Resume</span>
                         </a>

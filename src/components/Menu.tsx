@@ -20,6 +20,9 @@ export default function Menu() {
   }, []);
 
   const handleMenuClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) => {
+    if (e.currentTarget.href.startsWith("mailto:")) {
+      return;
+    }
     e.preventDefault();
     const section = document.getElementById(sectionId);
     if (section) {
@@ -109,7 +112,7 @@ export default function Menu() {
                 </a>
               </li>
               <li>
-                <a href="#contact"
+                <a href="mailto:wilsonmedina8d@gmail.com"
                   onClick={(e) => handleMenuClick(e, "contact")}
                   className={activeSection === "contact" ? "active" : ""}
                 >

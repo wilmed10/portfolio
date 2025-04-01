@@ -19,8 +19,8 @@ export default function Experience() {
                 <div className="job">
 
                     <div className='generals'>
-                        <h3>Service Engineer</h3>
-                        <p>Controling S.A.S ~ 4 Months</p>
+                        <a href="./documents/IntershipCertificate.pdf" target="_blank" rel="noopener noreferrer"><h3>Service Engineer</h3></a>
+                        <p>Controling S.A.S ~ <span>4 Months</span></p>
                         <div className="skills">
                             <div className='skill'>
                                 <p>Fault diagnosis</p>
@@ -45,7 +45,36 @@ export default function Experience() {
                         </ul>
                     </div>
 
+                </div>
 
+                <div className="job">
+
+                    <div className='generals'>
+                        <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0002091447" target="_blank" rel="noopener noreferrer"><h3>Researcher and Developer</h3></a>
+                        <p>University ~ <span>2 Years</span></p>
+                        <div className="skills">
+                            <div className='skill'>
+                                <p>Software Development</p>
+                            </div>
+
+                            <div className='skill'>
+                                <p>Computer Vision & AI</p>
+                            </div>
+
+                            <div className='skill'>
+                                <p>Embedded Systems Integration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="job-description">
+                        <ul>
+                            <li>Designed and implemented solutions for robotics, automation, and agricultural monitoring with real-time data processing.</li>
+                            <li>Applied machine learning models to enhance detection and decision-making.</li>
+                            <li>Developed systems for seamless communication between software and embedded devices.</li>
+                            <li>Built and integrated user interfaces for real-time data visualization and control.</li>
+                        </ul>
+                    </div>
 
                 </div>
 
