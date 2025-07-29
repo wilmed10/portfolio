@@ -17,6 +17,50 @@ export default function Experience() {
             <div className='jobs'>
 
                 <div className="job">
+                    <div className='generals'>
+                        <a href="https://mooba.co" target="_blank" rel="noopener noreferrer">
+                            <h3>Full Stack Developer</h3>
+                        </a>
+                        <p>Mooba Agencia ~ <span>3 Months (Ongoing)</span></p>
+                        <div className="skills">
+                            <div className='skill'>
+                                <p>React & Next.js</p>
+                            </div>
+                            <div className='skill'>
+                                <p>Strapi & WordPress</p>
+                            </div>
+                            <div className='skill'>
+                                <p>API Integration</p>
+                            </div>
+                            <div className='skill'>
+                                <p>SEO Optimization</p>
+                            </div>
+                            <div className='skill'>
+                                <p>Deployment (VPS/Hosting)</p>
+                            </div>
+                            <div className='skill'>
+                                <p>Version Control</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="job-description">
+                        <ul>
+                            <li>Development and maintenance of Ecommerce platforms using React, Tailwind CSS, and WordPress.</li>
+                            <li>Creation of dynamic and organizational websites with Next.js and headless CMS architectures.</li>
+                            <li>Full Strapi setup, including custom API routes, controllers, and content structure.</li>
+                            <li>Integration of Strapi and WordPress APIs using Fetch, handling JSON responses effectively.</li>
+                            <li>Implementation of technical SEO across all developed sites for enhanced visibility and indexing.</li>
+                            <li>Development of fully responsive, high-performance web interfaces.</li>
+                            <li>Use of libraries like DOMPurify, Keen-Slider, Swiper, and TanStack Query for enhanced UI/UX and data handling.</li>
+                            <li>Deployment of websites to VPS and hosting environments with proper configuration.</li>
+                            <li>Version control and collaboration through Git.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+                <div className="job">
 
                     <div className='generals'>
                         <a href="./documents/IntershipCertificate.pdf" target="_blank" rel="noopener noreferrer"><h3>Service Engineer</h3></a>

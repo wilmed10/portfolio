@@ -103,12 +103,12 @@ export default function Projects() {
 
                 <div className="project">
                     <div className={theme === 'dark' ?'photo':'photo light'}>
-                        <img src="./img/project-guitar.png" alt="project 3" />
+                        <img src="./img/project-drugstore.png" alt="project 3" />
                     </div>
 
                     <div className="description">
                         <div>
-                            <h3>Virtual guitar store</h3>
+                            <h3>Droguería webstore clone</h3>
 
                             <div className="techs">
                                 <div className='tech'>
@@ -130,14 +130,14 @@ export default function Projects() {
                             </div>
                         </div>
 
-                        <p>Online guitar store developed with JavaScript and React, using TailwindCSS for styling. The project implements reusable components and utilizes hooks like useState and useEffect for state management, along with localStorage for persistent shopping cart storage, providing a dynamic and interactive user experience.</p>
+                        <p>A fully responsive e-commerce UI clone inspired by a local pharmacy store. This project was created as part of a technical test to showcase skills in modern React development, routing, and responsive component-based UI using TailwindCSS and Vite.</p>
 
                         <div className="pj-buttons">
-                            <a href="https://wilmed10.github.io/guitarbaq/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                            <a href="https://wilmed10.github.io/drugstore-clone/" target="_blank" rel="noopener noreferrer" className="pj-btn">
                                 <img src="./img/eye-white.png" alt="eye icon" />
                                 <span>Preview</span>
                             </a>
-                            <a href="https://github.com/wilmed10/guitarbaq/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                            <a href="https://github.com/wilmed10/drugstore-clone/" target="_blank" rel="noopener noreferrer" className="pj-btn">
                                 <img src="./img/github-white.png" alt="github logo" />
                                 <span>Github</span>
                             </a>
