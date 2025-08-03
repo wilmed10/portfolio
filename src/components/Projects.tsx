@@ -48,7 +48,7 @@ export default function Projects() {
                         <p>This project was built with React and React Router DOM for seamless multi-page navigation. It leverages the Slice Pattern to manage multiple Zustand stores, ensuring modular and efficient state management for an enhanced user experience.</p>
 
                         <div className="pj-buttons">
-                            <a href="https://wilmed10.github.io/drinks/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                            <a href="https://drinks-coral-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" className="pj-btn">
                                 <img src="./img/eye-white.png" alt="eye icon" />
                                 <span>Preview</span>
                             </a>
