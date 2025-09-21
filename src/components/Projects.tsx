@@ -22,30 +22,29 @@ export default function Projects() {
                     </div>
 
                     <div className="description">
-                        <div>
-                            <h3>Drink recipe finder</h3>
+                        
+                            <h3>Drink Recipe Finder</h3>
 
                             <div className="techs">
                                 <div className='tech'>
-                                    <div className="photo-tech">
-                                        <img src="./img/react-logo.svg" alt="react logo" />
-                                    </div>
                                     <p>React</p>
                                 </div>
-
                                 <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/typescript-logo.svg" alt="typescript logo" /></div>
                                     <p>Typescrypt</p>
                                 </div>
-
                                 <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/tailwindcss-logo.svg" alt="tailwindcss logo" /></div>
-                                    <p>Tailwind CSS</p>
+                                    <p>Zustand</p>
+                                </div>
+                                <div className='tech'>
+                                    <p>API</p>
+                                </div>
+                                <div className='tech'>
+                                    <p>AI</p>
                                 </div>
                             </div>
-                        </div>
+                        
 
-                        <p>This project was built with React and React Router DOM for seamless multi-page navigation. It leverages the Slice Pattern to manage multiple Zustand stores, ensuring modular and efficient state management for an enhanced user experience.</p>
+                        <p>Built with React, Zustand, and React Router DOM. Integrated external APIs for dynamic recipe searches and implemented an LLM with openrouter/ai-sdkprovider for recipe queries.</p>
 
                         <div className="pj-buttons">
                             <a href="https://drinks-coral-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" className="pj-btn">
@@ -67,32 +66,31 @@ export default function Projects() {
                     </div>
 
                     <div className="description">
-                        <div>
-                            <h3>Cryptocurrency Price Tracker</h3>
+                            <h3>Product Manager (PERN Stack)</h3>
 
                             <div className="techs">
                                 <div className='tech'>
-                                    <div className="photo-tech">
-                                        <img src="./img/react-logo.svg" alt="react logo" />
-                                    </div>
+                                    <p>PostgreSQL</p>
+                                </div>
+                                <div className='tech'>
+                                    <p>Node.js</p>
+                                </div>
+                                <div className='tech'>
                                     <p>React</p>
                                 </div>
-
                                 <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/typescript-logo.svg" alt="typescript logo" /></div>
-                                    <p>Typescrypt</p>
+                                    <p>REST API</p>
                                 </div>
                             </div>
-                        </div>
 
-                        <p>This price calculator retrieves cryptocurrency prices in different currencies via an API. It uses Zustand for state management and Zod to validate responses, ensuring accurate and consistent data.</p>
+                        <p>Developed a full stack application with PostgreSQL, Express, React, and Node.js. Built a REST API with testing and documentation, and connected it to a React frontend.</p>
 
                         <div className="pj-buttons">
-                            <a href="https://wilmed10.github.io/cryptocurrency-market/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                            <a href="https://product-manager-apirest-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="pj-btn">
                                 <img src="./img/eye-white.png" alt="eye icon" />
                                 <span>Preview</span>
                             </a>
-                            <a href="https://github.com/wilmed10/cryptocurrency-market/" target="_blank" rel="noopener noreferrer" className="pj-btn">
+                            <a href="https://github.com/wilmed10/product-manager-apirest" target="_blank" rel="noopener noreferrer" className="pj-btn">
                                 <img src="./img/github-white.png" alt="github logo" />
                                 <span>Github</span>
                             </a>
@@ -107,28 +105,22 @@ export default function Projects() {
                     </div>
 
                     <div className="description">
-                        <div>
-                            <h3>Droguería webstore clone</h3>
+                            <h3>Pharmacy Webstore Clone</h3>
 
                             <div className="techs">
                                 <div className='tech'>
-                                    <div className="photo-tech">
-                                        <img src="./img/react-logo.svg" alt="react logo" />
-                                    </div>
                                     <p>React</p>
                                 </div>
-
                                 <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/typescript-logo.svg" alt="typescript logo" /></div>
                                     <p>Typescrypt</p>
                                 </div>
-
                                 <div className='tech'>
-                                    <div className="photo-tech"><img src="./img/tailwindcss-logo.svg" alt="tailwindcss logo" /></div>
                                     <p>Tailwind CSS</p>
                                 </div>
+                                <div className='tech'>
+                                    <p>Vite</p>
+                                </div>
                             </div>
-                        </div>
 
                         <p>A fully responsive e-commerce UI clone inspired by a local pharmacy store. This project was created as part of a technical test to showcase skills in modern React development, routing, and responsive component-based UI using TailwindCSS and Vite.</p>
 

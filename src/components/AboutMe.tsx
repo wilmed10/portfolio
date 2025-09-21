@@ -13,12 +13,24 @@ export default function AboutMe() {
         </div>
 
         <div className="aboutMe-description">
-          <p>I am a <span>mechatronics engineer</span> focused on web development, specializing in creating interactive applications, optimizing interfaces, and consuming APIs.</p>
+  <p>
+    I am a <span>Full Stack Developer</span> and Mechatronics Engineer 
+    specialized in creating interactive and scalable web applications.
+  </p>
 
-          <p>Passionate about programming, with <span>more than 5 years</span> of experience with programming projects through Arduino, Java, Python, and JavaScript.</p>
+  <p>
+    Focused on building optimized interfaces, consuming APIs, and applying 
+    best practices for performance, maintainability, and user experience.
+  </p>
 
-          <p>I am always looking to improve my skills, apply best practices, and develop efficient and scalable solutions. <span>I am open to new opportunities and collaborations</span>, so feel free to contact me for future projects.</p>
-        </div>
+  <p>
+    Passionate about software development, I have hands-on experience with 
+    <span> React, Next.js, TypeScript, Node.js, and PostgreSQL</span>. 
+    Always eager to learn and collaborate, I am open to new challenges 
+    and opportunities to grow as a developer.
+  </p>
+</div>
+
 
     </section>
   )

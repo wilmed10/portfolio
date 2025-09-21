@@ -38,7 +38,7 @@
 
 .intro p {
     font-size: 1.5rem;
-    line-height: 1.3;
+    line-height: 1.6;
     margin: 0;
 }
 .intro p span {
@@ -75,9 +75,6 @@
     font-size: 1.4rem;
     font-weight: 500;
 }
-/* .btn span:hover {
-    color: #000;
-} */
 
 .resume .photo {
     display: flex;

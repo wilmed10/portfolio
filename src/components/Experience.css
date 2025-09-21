@@ -1,119 +1,132 @@
 .jobs {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
     width: 100%;
-    gap: 3rem;
+    position: relative;
+}
+
+/* Línea vertical tipo timeline */
+.jobs::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary), transparent);
+    border-radius: 2px;
 }
 
 .job {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 5%;
+    flex-direction: column;
+    position: relative;
+    padding-left: 4.5rem;
 }
 
-.job .generals {
-    width: 40%;
-}
-.job-description {
-    width: 55%;
+/* Punto en la línea */
+.job::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(243, 188, 62, 0.8);
 }
 
-.jobs a {
+/* Rol en color destacado */
+.job .generals h3 {
+    /* font-size: 2rem; */
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary);
+    transition: color 0.3s ease-in-out;
+}
+.job .generals h3:hover {
+    color: #d08710;
+}
+
+.job .generals a {
     text-decoration: none;
-    outline: none;
-}
-.jobs a:hover {
-    text-decoration:underline;
-    text-decoration-color: var(--primary);
-    outline: none;
+    color: inherit;
 }
 
+.job .generals a:hover {
+    text-decoration: none;
+}
+
+
+/* Empresa + años */
 .generals > p {
     font-size: 1.6rem;
     font-weight: 500;
-    margin: .5rem 0 1rem 0;
+    margin: .5rem 0 1.2rem 0;
 }
-
 .generals span {
     font-weight: 700;
 }
 
-.generals .skills {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-.skill {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.5rem;
-    padding: .2rem 0;
-    background-color: var(--tertiary);
-}
-.skill p {
-    margin: 0;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
 .job-description {
-    display: flex;
     background-color: var(--quinary);
-    border-left: 4px solid var(--primary);
-    border-radius: 8px;
-    padding: 1.2rem;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    transition: background-color 0.3s ease-in-out;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.job-description:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.35);
 }
 
 .job-description > ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 100%;
 }
 
 .job-description > ul > li {
     font-size: 1.4rem;
-    line-height: 1.5;
+    line-height: 1.6;
     padding: 0.6rem 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    transition: color 0.3s ease-in-out;
 }
-
 .job-description > ul > li:last-child {
     border-bottom: none;
 }
 
+/* Bullet minimalista */
 .job-description > ul > li::before {
-    content: "🔹";
+    content: "▹";
+    font-size: 1.6rem;
     margin-right: 0.8rem;
     color: var(--primary);
 }
 
-.job-description > ul > li:hover {
-    background-color: rgba(241, 177, 74, 0.6);
-}
-
-@media (max-width: 640px) {
-    .job {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .jobs::before {
+        left: 12px;
     }
-    .job .generals {
-        width: 100%;
+    .job {
+        padding-left: 3.5rem;
+    }
+    .job .generals h3 {
+        font-size: 1.8rem;
+    }
+    .generals > p {
+        font-size: 1.3rem;
     }
     .job-description {
-        width: 100%;
-        margin-top: 2rem;
-        box-sizing: border-box;
-        overflow: hidden;
+        padding: 1.2rem;
+    }
+    .job-description > ul > li {
+        font-size: 1.3rem;
     }
 }
