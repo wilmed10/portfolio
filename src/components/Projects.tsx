@@ -62,7 +62,7 @@ export default function Projects() {
 
                 <div className="project midle">
                     <div className={theme === 'dark' ?'photo':'photo light'}>
-                        <img src="./img/project-crypto2.png" alt="project 2" />
+                        <img src="./img/project-pern.png" alt="project 2" />
                     </div>
 
                     <div className="description">
