@@ -21,14 +21,15 @@ export default function Experience() {
                         <a href="https://mooba.co" target="_blank" rel="noopener noreferrer">
                             <h3>Full Stack Developer</h3>
                         </a>
-                        <p>Mooba Agencia ~ <span>5 Months (Ongoing)</span></p>
+                        <p>Mooba Agencia ~ <span>Since May 2025 (Ongoing)</span></p>
                     </div>
 
                     <div className="job-description">
                         <ul>
-                            <li>Built and optimized e-commerce platforms and dynamic websites using React, Next.js, Tailwind CSS, Strapi, and WordPress.</li>
-                            <li>Implemented REST APIs, headless CMS integrations, and SEO enhancements, improving scalability and visibility.</li>
-                            <li>Deployed projects to VPS with CI/CD pipelines and managed version control with Git.</li>
+                            <li>Full stack development with Next.js, Node.js, and PostgreSQL, delivering and consuming REST APIs.</li>
+                            <li>Backend implementation including database modeling, PL/pgSQL logic, and authentication flows using Supabase (PostgreSQL).</li>
+                            <li>Frontend development with Next.js, focused on SSR, SEO, and performance, plus CMS integration (Strapi, WordPress).</li>
+                            <li>Participation in Docker-based deployments, production bug fixing, and basic CI/CD workflows.</li>
                         </ul>
                     </div>
 
