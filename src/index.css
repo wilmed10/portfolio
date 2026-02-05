@@ -10,7 +10,7 @@
   --secondary: #232741;
   --tertiary: #0C0D16;
   --quaternary: #ec9a12;
-  --quinary: #707070;
+  --quinary: #707080;
   --gradient: #06090e;
   --text-color: #ffffff;
 
@@ -33,7 +33,7 @@ section {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0;
 }
 

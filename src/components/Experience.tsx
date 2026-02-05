@@ -26,10 +26,10 @@ export default function Experience() {
 
                     <div className="job-description">
                         <ul>
-                            <li>Full stack development with Next.js, Node.js, and PostgreSQL, delivering and consuming REST APIs.</li>
-                            <li>Backend implementation including database modeling, PL/pgSQL logic, and authentication flows using Supabase (PostgreSQL).</li>
-                            <li>Frontend development with Next.js, focused on SSR, SEO, and performance, plus CMS integration (Strapi, WordPress).</li>
-                            <li>Participation in Docker-based deployments, production bug fixing, and basic CI/CD workflows.</li>
+                            <li>Developed and maintained production-ready web applications and internal SaaS platforms using Next.js, Go, and PostgreSQL, focused on backend logic, REST API design, and scalable architectures.</li>
+                            <li>Built and evolved backend services with Go (Gin, GORM), including business logic, data modeling, and authentication flows, following clean architecture principles.</li>
+                            <li>Implemented frontend features with Next.js, emphasizing SSR, SEO, and performance, and integrated headless CMS solutions (Strapi, WordPress).</li>
+                            <li>Participated in Docker-based deployments, production bug fixing, and basic CI/CD workflows, collaborating in a real-world product environment.</li>
                         </ul>
                     </div>
 

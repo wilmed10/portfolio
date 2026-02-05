@@ -62,7 +62,7 @@ function App() {
           color: "#f1b24a",
           distance: 120,
           enable: true,
-          opacity: 0.1,
+          opacity: 0.3,
           width: 0.5,
         },
         move: {
@@ -79,7 +79,7 @@ function App() {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 100,
         },
         opacity: {
           value: 0.5,

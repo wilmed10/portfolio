@@ -19,13 +19,12 @@ export default function Resume() {
                     </div>
 
                     <p>
-                        <span>Full Stack Developer | Mechatronics Engineer</span><br/>
-                        I build high-performance web applications with React, Next.js, and Node.js, 
-                        integrating modern architectures and optimized user experiences.
+                        <span>Full Stack Developer | Backend-oriented </span><br/>
+                        Building production-ready web systems with Go, PostgreSQL, and Next.js.
                     </p>
 
                     <div className="buttons">
-                        <a href="./documents/CV FullStack Wilson Medina.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+                        <a href="./documents/CV FullStack Wilson Medina FEB2026v2.pdf" target="_blank" rel="noopener noreferrer" className="btn">
                         <img src={theme === 'dark' ?'./img/descargar-white.png':'./img/descargar-black.png'} alt="download icon" />
                         <span>Resume</span>
                         </a>

@@ -14,18 +14,18 @@ export default function AboutMe() {
 
         <div className="aboutMe-description">
   <p>
-    I am a <span>Full Stack Developer</span> and Mechatronics Engineer 
-    specialized in creating interactive and scalable web applications.
+    I am a <span>Backend-oriented Full Stack Developer</span> and Mechatronics Engineer 
+    with hands-on experience building and maintaining production web applications.
   </p>
 
   <p>
-    Focused on building optimized interfaces, consuming APIs, and applying 
-    best practices for performance, maintainability, and user experience.
+    My work focuses on API design, backend business logic, and relational databases,
+    while also delivering performant and SEO-friendly frontend solutions with Next.js.
   </p>
 
   <p>
-    Passionate about software development, I have hands-on experience with 
-    <span> React, Next.js, TypeScript, Node.js, and PostgreSQL</span>. 
+    I have experience working with <span>Go, Node.js, PostgreSQL</span> and headless CMS platforms
+    such as Strapi, following clean architecture principles and real-world development practices. 
     Always eager to learn and collaborate, I am open to new challenges 
     and opportunities to grow as a developer.
   </p>
