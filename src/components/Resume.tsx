@@ -24,7 +24,7 @@ export default function Resume() {
                     </p>
 
                     <div className="buttons">
-                        <a href="./documents/CV Software Engineer MAY2027.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+                        <a href="./documents/CV Software Engineer JUNE2027.pdf" target="_blank" rel="noopener noreferrer" className="btn">
                         <img src={theme === 'dark' ?'./img/descargar-white.png':'./img/descargar-black.png'} alt="download icon" />
                         <span>Resume</span>
                         </a>
