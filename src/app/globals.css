@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f5f1ea;
+  --color-surface: #fbf9f4;
+  --color-ink: #1f1d1a;
+  --color-muted: #6b645a;
+  --color-line: #d9d2c4;
+  --color-accent: #2f5d3a;
+
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Scroll reveal: the HTML is visible by default; Reveal.tsx sets data-reveal
+   only after hydration, and only on content that starts below the fold. */
+[data-reveal] {
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+[data-reveal="hidden"] {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Hover scroll preview (ScrollPreview.tsx). The frame is a size container, so
+   100cqh is the visible height and the image stops exactly at its bottom edge.
+   Slow start and end, faster in the middle (ease-in-out). On leave it returns quickly. */
+.scroll-preview {
+  container-type: size;
+}
+
+.scroll-preview-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  opacity: 0;
+  transition: transform 0.7s cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.scroll-preview[data-ready] .scroll-preview-img {
+  opacity: 1;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .scroll-preview[data-ready]:hover .scroll-preview-img {
+    transform: translateY(calc(-100% + 100cqh));
+    transition-duration: var(--scroll-duration);
+    transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    transition: none;
+  }
+}

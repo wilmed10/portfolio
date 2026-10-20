@@ -1,15 +1,12 @@
-# Portfolio — Wilson Jr. Medina Arrieta
+# Portfolio
 
-Personal portfolio site built with React, TypeScript and Vite. Single-page layout with sections for projects, experience, resume and about me, an animated particle background, and a light/dark theme switcher.
-
-Live at [wilmed10.github.io/portfolio](https://wilmed10.github.io/portfolio/)
+Personal site of Wilson Medina, live at [wilsonmedina.com](https://wilsonmedina.com). Bilingual (`/en`, `/es`), statically generated.
 
 ## Stack
 
-- React 19 + TypeScript
-- Vite (build/dev server)
-- Zustand for theme/section state
-- `@tsparticles` for the interactive background
+- Next.js (App Router), React 19, TypeScript
+- Tailwind CSS
+- Vitest for unit and component tests
 
 ## Getting started
 
@@ -20,12 +17,13 @@ npm run dev
 
 ## Scripts
 
-- `npm run dev` — start the dev server
-- `npm run build` — type-check and build for production
-- `npm run lint` — run ESLint
-- `npm run preview` — preview the production build locally
-- `npm run deploy` — publish `dist/` to the `gh-pages` branch (legacy path; deployment is being migrated to the GitHub Actions workflow in `.github/workflows/deploy.yml`)
+- `npm run dev`: start the dev server
+- `npm run build`: production build
+- `npm run start`: serve the production build
+- `npm run assets`: rebuild the optimized images and the Open Graph image. Needs `ASSET_SRC` (screenshots and photos) and `PHOTOS_SRC` (team photo) set to local paths
+- `npm run lint`: run ESLint
+- `npm test`: run the test suite
 
 ## Deployment
 
-Pushes to `main` build the site and publish it to GitHub Pages via `.github/workflows/deploy.yml` (`actions/upload-pages-artifact` + `actions/deploy-pages`).
+Deployed on Vercel (Next.js preset). Pushes to the connected branch deploy automatically.
